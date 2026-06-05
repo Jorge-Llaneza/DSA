@@ -1,7 +1,7 @@
 #include <cstdio>
 
-int factorial(int n);
-int iterative_factorial(int n);
+unsigned int factorial(int n);
+unsigned int iterative_factorial(int n);
 
 /* int main() 
 {
@@ -10,7 +10,7 @@ int iterative_factorial(int n);
 } */
 
 // O(n) time and space
-int factorial(int n)
+unsigned int factorial(unsigned int n)
 {
     if (n <= 0) 
     {
@@ -23,10 +23,10 @@ int factorial(int n)
 }
 
 // O(n) time but O(1) space
-int iterative_factorial(int n) 
+unsigned int iterative_factorial(int n) 
 {
-    int prod = 1;
-    for (int i = 1; i <= n; i++) 
+    unsigned int prod = 1;
+    for (unsigned int i = 1; i <= (unsigned int) n; i++) 
     {
         prod *= i;
     }

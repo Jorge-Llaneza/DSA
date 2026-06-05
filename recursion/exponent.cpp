@@ -1,6 +1,6 @@
 #include <cstdio>
-long pow(long m, long n);
-long pow_efficient(long m, long n);
+unsigned long pow(unsigned long m, unsigned long n);
+unsigned long pow_efficient(unsigned long m, unsigned long n);
 
 /* int main()
 {
@@ -8,7 +8,7 @@ long pow_efficient(long m, long n);
     printf("2 to the power of 60: %ld\n", pow_efficient(2, 60));
 } */
 
-long pow(long m, long n)
+unsigned long pow(unsigned long m, unsigned long n)
 {
     if (n == 1)
     {
@@ -20,7 +20,7 @@ long pow(long m, long n)
     }
 }
 
-long pow_efficient(long m, long n)
+unsigned long pow_efficient(unsigned long m, unsigned long n)
 {
     if (n == 0)
     {
@@ -28,10 +28,10 @@ long pow_efficient(long m, long n)
     }
     if (n)
     {
-        return pow(m*m, n/2);
+        return pow_efficient(m*m, n/2);
     }
     else
     {
-        return m * pow(m, (n-1)/2);
+        return m * pow_efficient(m, (n-1)/2);
     }
 }
