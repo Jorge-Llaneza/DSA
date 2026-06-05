@@ -7,8 +7,8 @@ int iterative_factorial(int n);
 {
     printf("%d \n", factorial(12));
     printf("%d \n", iterative_factorial(12));
-} */
-
+}
+ */
 // O(n) time and space
 int factorial(int n)
 {

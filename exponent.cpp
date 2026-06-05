@@ -6,8 +6,8 @@ long pow_efficient(long m, long n);
 {
     printf("2 to the power of 60: %ld\n", pow(2, 60));
     printf("2 to the power of 60: %ld\n", pow_efficient(2, 60));
-} */
-
+}
+ */
 long pow(long m, long n)
 {
     if (n == 1)

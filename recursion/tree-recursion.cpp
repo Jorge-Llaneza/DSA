@@ -11,7 +11,7 @@ void fun(int n)
     }
 }
 
-int main() {
+/* int main() {
     fun(4);
     return EXIT_SUCCESS;
-}
+} */

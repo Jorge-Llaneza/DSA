@@ -3,9 +3,9 @@
 void funA(int n);
 void funB(int n);
 
-int main() {
+/* int main() {
     funA(40);
-}
+} */
 
 void funA(int n) 
 {
